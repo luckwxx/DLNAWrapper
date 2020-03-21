@@ -205,7 +205,7 @@
                 
                 device.uuid = usn;
                 
-                GDataXMLDocument *document = [[GDataXMLDocument alloc] initWithData:data options:0 error:nil];
+                GDataXMLDocument *document = [[GDataXMLDocument alloc] initWithData:data encoding:NSUTF8StringEncoding  error:nil];
                 
                 GDataXMLElement *deviceElement = [[[document rootElement] elementsForName:@"device"] objectAtIndex:0];
                 

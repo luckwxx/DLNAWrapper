@@ -59,7 +59,7 @@
 - (void)success:(NSData *)data
 {
     
-    GDataXMLDocument *document = [[GDataXMLDocument alloc] initWithData:data options:0 error:nil];
+    GDataXMLDocument *document = [[GDataXMLDocument alloc] initWithData:data encoding:NSUTF8StringEncoding error:nil];
     
     GDataXMLElement *bodyElement = [[[document rootElement] elementsForLocalName:@"Body" URI:[[document rootElement] URI]] objectAtIndex:0];
     

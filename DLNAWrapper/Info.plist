@@ -27,6 +27,16 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
+	<key>NSCameraUsageDescription</key>
+	<string>我们需要您的同意才能使用相机，用于扫码或拍照操作</string>
+	<key>NSContactsUsageDescription</key>
+	<string>我们需要您的同意才能访问</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>我们需要您的同意才能使用麦克风，用于媒体播放或直播操作</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>我们需要您的同意才能访问您的相册</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>我们需要您的同意才能访问媒体资料库，用于设置您的头像</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIRequiredDeviceCapabilities</key>

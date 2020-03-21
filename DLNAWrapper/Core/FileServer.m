@@ -5,8 +5,8 @@
 //  Created by Key.Yao on 16/9/26.
 //  Copyright © 2016年 Key. All rights reserved.
 //
-
-#import "GCDWebServerPrivate.h"
+#import <UIKit/UIKit.h>
+#import "GCDWebServer.h"
 #import "GCDWebServerDataResponse.h"
 #import "GCDWebServerFileResponse.h"
 
@@ -44,10 +44,9 @@
     
     if (self) {
         
-        [GCDWebServer setLogLevel:IS_DEBUGING ? kGCDWebServerLoggingLevel_Debug : kGCDWebServerLoggingLevel_Error];
+        [GCDWebServer setLogLevel:IS_DEBUGING ? 0 : 4];
         
         _webServer = [[GCDWebServer alloc] init];
-        
     }
     
     return self;

@@ -1,5 +1,7 @@
 # DLNAWrapper
 
+基于 https://github.com/KeyYao/DLNAWrapper 代码修改<br>
+
 封装DLNA功能，基于Upnp实现简单的视频投射<br>
 使用SSDP发现设备<br>
 使用SOAP控制设备<br>
@@ -7,7 +9,13 @@
 实现了DMC功能<br>
 实现投射本地资源功能<br>
 
-引用的依赖库：[GCDAsyncUdpSocket](https://github.com/robbiehanson/CocoaAsyncSocket)、[GDataXML](https://github.com/google/gdata-objectivec-client)、[GCDWebServer](https://github.com/swisspol/GCDWebServer)、[Masonry](https://github.com/SnapKit/Masonry)
+引用的依赖库：<br>
+```
+pod 'CocoaAsyncSocket','~>7.6.4' 
+pod 'GCDWebServer','~>3.5.4' 
+pod 'Reachability','~>3.2' 
+pod 'GDataXML-HTML','~>1.4.1' 
+```
 
 ## Core
 * `DLNAUpnpServer.h` DLNA服务类，用于扫描设备
