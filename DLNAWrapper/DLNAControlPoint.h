@@ -1,0 +1,20 @@
+//
+//  DLNAControlPoint.h
+//  DLNAWrapper
+//
+//  Created by Key.Yao on 16/9/19.
+//  Copyright © 2016年 Key. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+#import "DLNAControlService.h"
+#import "DLNAActionDelegate.h"
+#import "DLNAConfig.h"
+
+@interface DLNAControlPoint : NSObject
+
+- (instancetype)initWithService:(DLNAControlService *)service;
+
+- (void)executeAction:(id<DLNAActionDelegate>)action;
+
+@end
